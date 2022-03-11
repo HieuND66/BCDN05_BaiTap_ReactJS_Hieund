@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import './Modal/modal.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+var FontAwesome = require('react-fontawesome');
 export default class Modal extends Component {
   render() {
     let {shoesState} = this.props
@@ -8,8 +10,7 @@ export default class Modal extends Component {
         <div className="card modal-dialog">
           <div className="left">
             <img src={shoesState.image} alt="shoe" />
-            <i className="fa fa-long-arrow-left" />
-            <i className="fa fa-long-arrow-right" />
+
           </div>
           <div className="right">
             <div className="product-info">
